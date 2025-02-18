@@ -7011,7 +7011,7 @@ cc_prebuilt_library_shared {
                 "libcamxfdengine",
                 "libcamxstatscore",
                 "libsync",
-                "libmegface",
+                "libmegface_vendor",
                 "libMegviiFacepp-0.5.2",
                 "libz",
                 "libdl",
@@ -8042,6 +8042,33 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMegviiFacepp-0.5.2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMegviiFacepp-0.5.2.so",
+            ],
+            shared_libs: [
+                "libmegface_vendor",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+                "libEGL",
+                "libGLESv2",
             ],
         },
     },
@@ -10553,6 +10580,31 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmegface_vendor",
+    stem: "libmegface",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmegface.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
             ],
         },
     },
