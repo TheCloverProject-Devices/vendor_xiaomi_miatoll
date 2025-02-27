@@ -394,6 +394,7 @@ PRODUCT_PACKAGES += \
     libc2d30_bltlib \
     libdapparamstorage \
     libdiag \
+    libdlbpreg \
     libdsutils \
     libgpudataproducer \
     libgsl \
@@ -418,9 +419,11 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqsocket \
+    libstagefright_foundation-v34_cancunf \
     libstagefright_foundation_sweet \
     libwfddisplayconfig_proprietary \
     libwfdhdcpcp \
+    libdlbvol \
     libhwdap \
     libswdap \
     libswgamedap \
