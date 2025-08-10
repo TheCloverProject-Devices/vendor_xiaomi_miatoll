@@ -939,6 +939,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     MiuiExtraPhoto \
     CACertService \
@@ -1035,6 +1036,7 @@ PRODUCT_PACKAGES += \
     system_system_priv-app_MiuiExtraPhoto_lib_arm64_libmibokeh_gallery_so \
     system_system_priv-app_MiuiExtraPhoto_lib_arm64_librefocus_so \
     system_system_priv-app_MiuiExtraPhoto_lib_arm64_librefocus_mibokeh_so \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
